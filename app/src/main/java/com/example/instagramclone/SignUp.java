@@ -64,9 +64,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
             public void onClick(View v) {
                 allKickBoxers = "";
                 ParseQuery<ParseObject> queryAll = ParseQuery.getQuery("KickBoxer");
-//                queryAll.whereGreaterThan("punchPower", 2000);
+                queryAll.whereGreaterThan("punchPower", 2000);
 //                queryAll.whereLessThanOrEqualTo("punchPower", 3000);
-                queryAll.setLimit(1);
+//                queryAll.setLimit(1);
                 queryAll.findInBackground(new FindCallback<ParseObject>() {
                     @Override
                     public void done(List<ParseObject> objects, ParseException e) {
