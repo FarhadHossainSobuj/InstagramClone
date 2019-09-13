@@ -105,4 +105,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtGetData" />
+
+    <Button
+        android:id="@+id/btnTransition"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:text="Go another activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetAllData" />
 </androidx.constraintlayout.widget.ConstraintLayout>
