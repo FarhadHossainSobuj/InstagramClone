@@ -48,7 +48,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         btnLogin.setOnClickListener(this);
 
         if(ParseUser.getCurrentUser() != null){
-            ParseUser.logOut();
+            transitionSocialMediaActivity();
+//            ParseUser.logOut();
+
         }
 
     }
@@ -78,6 +80,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
                                 edtEmail.setText("");
                                 edtUsername.setText("");
                                 edtPassword.setText("");
+                                transitionSocialMediaActivity();
                             } else {
                                 FancyToast.makeText(SignUp.this, e.getMessage() + "", Toast.LENGTH_SHORT, FancyToast.ERROR, false).show();
                             }
@@ -100,5 +103,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
             e.printStackTrace();
         }
 
+    }
+    private void transitionSocialMediaActivity(){
+        Intent intent = new Intent(this, SocialMediaActivity.class);
+        startActivity(intent);
     }
 }
