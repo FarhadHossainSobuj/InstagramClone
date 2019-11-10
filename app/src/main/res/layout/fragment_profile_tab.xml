@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileTab">
+
+    <EditText
+        android:id="@+id/edtProfileName"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:hint="Please enter a profile name..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtHobbies"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Please enter your hobbies..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtFavoriteSport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtFavoriteSport"
+        app:layout_constraintTop_toBottomOf="@+id/edtFavoriteSport" />
+
+    <EditText
+        android:id="@+id/edtProfession"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Please enter your profession..."
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edtHobbies"
+        app:layout_constraintTop_toBottomOf="@+id/edtHobbies" />
+
+    <EditText
+        android:id="@+id/edtBio"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Please enter your bio..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtProfession"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtProfession"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfession" />
+
+    <EditText
+        android:id="@+id/edtFavoriteSport"
+        android:layout_width="376dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Please enter your favorite sport..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtProfileName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfileName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="150dp"
+        android:text="update info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtBio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
