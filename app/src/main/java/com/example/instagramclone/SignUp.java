@@ -52,10 +52,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 //            ParseUser.logOut();
 
         }
-
     }
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -102,10 +99,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
     private void transitionSocialMediaActivity(){
         Intent intent = new Intent(this, SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 }
